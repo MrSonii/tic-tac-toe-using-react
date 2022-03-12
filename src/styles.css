@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  caret-color: transparent;
+  color: white;
+}
+
+#root {
+  display: flex;
+  background: black;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.parent {
+  height: 100%;
+  width: 100%;
+  min-height: 250px;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.scoreBoard {
+  width: 100%;
+  min-width: 450px;
+  display: fleX;
+  justify-content: center;
+}
+
+.scores {
+  padding: 5px 15px;
+  text-align: center;
+  font-size: 1.2rem;
+  background: rgb(19, 19, 19);
+}
+
+.reset {
+  font-size: 1rem;
+  background-color: black;
+  padding: 3px 10px;
+}
+
+.undo {
+  font-size: 1rem;
+  margin-left: 15px;
+  background-color: black;
+  padding: 3px 10px;
+}
+
+.board {
+  height: 70%;
+  width: 70%;
+  min-height: 250px;
+  min-width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.child {
+  flex-basis: 33.33%;
+  height: 33.33%;
+  font-size: 6rem;
+  background: rgb(19, 19, 19);
+  text-align: center;
+}
+
+.child:nth-child(2) {
+  border-left: 5px solid;
+  border-right: 5px solid;
+}
+
+.child:nth-child(4) {
+  border-top: 5px solid;
+  border-bottom: 5px solid;
+}
+
+.child:nth-child(5) {
+  border: 5px solid;
+}
+
+.child:nth-child(6) {
+  border-top: 5px solid;
+  border-bottom: 5px solid;
+}
+
+.child:nth-child(8) {
+  border-left: 5px solid;
+  border-right: 5px solid;
+}
+
+.resultStatus {
+  flex: 0 0 50%;
+  text-align: center;
+  background: black;
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: 3rem;
+  padding: 5px 40px;
+}
+
+.resultScreen {
+  width: 100%;
+  height: 100%;
+  background: rgba(87, 87, 87, 0.453);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+}
+
+.restart {
+  flex: 0 0 51%;
+  font-size: 1.8rem;
+  padding: 5px 20px;
+  background-color: black;
+}
+
+.activePlayer {
+  width: 100%;
+  text-align: center;
+  background: rgb(19, 19, 19);
+  font-size: 1.3rem;
+}
